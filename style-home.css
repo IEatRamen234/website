@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+    text-left: 40px; /* Aproximativ un tab */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 75px; /* This ensures all content is pushed below the navbar */
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  background: #0da51d;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Make sure nav stays on top */
+}
+
+nav .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 90%;
+  margin: auto;
+}
+
+nav .navbar .logo a {
+  color: #fff;
+  font-size: 27px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav .navbar .menu {
+  display: flex;
+}
+
+.navbar .menu li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.navbar .menu li a {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Home Section */
+#home {
+  padding: 50px 0;
+}
+
+.home-container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.home-container h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #0da51d;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.home-text {
+  max-width: 600px;
+}
+
+.home-content img.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.home-text p {
+  font-size: 1.1em;
+  line-height: 1.6em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.home-text .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0da51d;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.home-text .btn:hover {
+  background-color: #0b8415;
+}
+
+/* Grid for about content */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Două coloane de dimensiuni egale */
+  align-items: center; /* Aliniere pe verticală */
+  gap: 20px; /* Spațiu între coloane */
+  padding: 20px;
+}
+
+.image img {
+  max-width: 100%; /* Imaginea se redimensionează pentru a se potrivi în container */
+  height: auto;
+}
+
+/* Title styles */
+.title h1 {
+  text-align: center; /* Centrează titlul pe orizontală */
+  font-size: 3em; /* Mărește dimensiunea fontului pentru a arăta ca un titlu */
+  font-weight: 600; /* Face textul bold */
+  color: #0da51d; /* Culoarea titlului, la alegere */
+  margin-bottom: 20px; /* Adaugă spațiu sub titlu */
+}
+
+/* Alternating Background Colors for Sections */
+section:nth-child(odd) {
+  background-color: #f4f4f4; /* Light grey */
+}
+
+section:nth-child(even) {
+  background-color: #ffffff; /* White */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#pdf-section {
+    padding: 20px;
+    background-color: #f4f4f4; /* Light grey background */
+    margin: 20px 0; /* Margin around the section */
+}
+
+.pdf-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between columns */
+}
+
+.pdf {
+    height: 600px; /* Set a height for the PDF container */
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: center; /* Center text vertically */
+    padding-left: 20px; /* Optional padding */
+}
+
+.about-text h2 {
+    margin-bottom: 10px; /* Space below the header */
+    color: #0da51d; /* Match your theme color */
+}
+
+.about-text p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: #333; /* Dark text color */
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content h2 {
+    margin: 0 0 10px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.socials a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333; /* Change to your preferred color */
+    text-decoration: none;
+}
+
+.socials a:hover {
+    color: #007bff; /* Change to your preferred hover color */
+}
